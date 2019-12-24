@@ -1,0 +1,215 @@
+body
+{
+	margin: 0;	
+	padding: 0;
+	background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #A7A7A7 100%);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	height: 100vh;
+	width: 100%;
+	font-family: Roboto;
+	color: #2F2F2F;
+}
+.container
+{
+	width: 968px;
+	margin: 0 auto;
+}
+header
+{
+	padding: 20px 0;
+	display: flex;
+	justify-content: space-between;
+}
+header .site_logo
+{
+	cursor: pointer;
+	font-size: 36px;
+	padding-top: 5px;
+	transition: .3s;
+}
+header .site_logo:hover
+{
+	transform: scale(1.1);
+}
+header .site_logo span:nth-child(1)
+{
+	color: #F142CF;
+}
+header .site_logo span:nth-child(2)
+{
+	color: #4941CC;
+}
+nav ul
+{
+	display: flex;
+}
+.burger
+{
+	display: none;
+}
+nav ul li
+{
+	cursor: pointer;
+	display: block;
+	padding: 0 20px;
+	font-size: 24px;
+	transition: .3s;
+}
+nav ul li:hover
+{
+	background: linear-gradient(45deg, #F842D0 0%, #3141CC 100%);
+	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+	transform: skew(-0.06turn, 18deg);
+}
+.splash
+{
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.ellipse
+{
+	height: 226px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.ellipse .dot
+{
+	width: 226px;
+	height: 226px;
+	border-radius: 50%;
+	background: linear-gradient(180deg, #F842D0 0%, #3141CC 100%);
+	transition: .3s;
+}
+.author
+{
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	padding-top: 6.3vh;
+	display: flex;
+	justify-content: center;
+}
+.author .author_img
+{
+	width: 78vh;
+	height: 78vh;
+	background-image: url(../images/author.png);
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.splash_text
+{
+	position: relative;
+	font-size: 86px;
+}
+.splash_text div
+{
+	position: absolute;
+	top: 30vh;
+}
+.splash_text .textLeft
+{
+	left: 0;
+}
+.splash_text .textRight
+{
+	top: 43vh;
+	left: 75%;
+	color: #F642D0;
+}
+
+@media only screen and (min-width : 320px) and (max-width : 480px)
+{
+	.container
+	{
+		width: 320px;
+	}
+	header
+	{
+		display: block;
+		padding: 10px 0;
+	}
+	header .site_logo
+	{
+		display: inline-flex;
+		width: 75%;
+	}
+	.burger
+	{
+		display: inline-flex;
+		width: 20%;
+	}
+	.burger ul
+	{
+		display: inline-block;
+	}
+	nav
+	{
+		display: none;
+		width: 100%;
+		background-color: #2F2F2F;
+	}
+	nav ul
+	{
+		flex-direction: column;
+	}
+	nav ul li
+	{
+		cursor: pointer;
+		display: block;
+		padding: 30px 0;
+		font-size: 28px;
+		transition: .3s;
+		color: #F842D0;
+	}
+	nav ul li:hover
+	{
+		color: #2F2F2F;
+		background: linear-gradient(45deg, #F842D0 0%, #3141CC 100%);
+		-webkit-background-clip: padding-box;
+	  	-webkit-text-fill-color: unset;
+		transform: none;
+	}
+
+
+	.ellipse
+	{
+		height: 176px;
+	}
+	.ellipse .dot
+	{
+		width: 176px;
+		height: 176px;
+	}
+	.author .author_img
+	{
+		width: 38vh;
+		height: 38vh;
+	}
+	.splash_text
+	{
+		position: relative;
+		font-size: 32px;
+	}
+	.splash_text div
+	{
+		position: unset;
+	}
+	.splash_text .textLeft
+	{
+		padding-top: 15vh;
+	}
+	.splash_text .textRight
+	{
+		text-align: right;
+		padding-top: 5vh;
+	}
+}
