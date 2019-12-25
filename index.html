@@ -2,87 +2,57 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>{ dataproger }</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DATAPROGER | КРАСИВЫЙ дизайн - ПРИБЫЛЬНЫЙ бизнес!</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Nurbek Ismoilov | https://t.me/noreck77">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
 	<link rel="stylesheet" href="styles/main.css">
-	<link rel="stylesheet" href="styles/animate.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="./js/wow.min.js"></script>	
-	<script>
-		new WOW().init();
-	</script>
 </head>
 <body>
-	<div class="container">
-		<header>
-			<div class="site_logo"><span class="">{</span> dataproger <span class="">}</span></div>
-			<div class="burger">
-				<ul>
-					<i class="fas fa-bars menu_hamburger"></i>
-				</ul>
-			</div>
-			<nav>
-				<ul>
-					<li>About me</li>
-					<li>Experience</li>
-					<li>Portfolio</li>
-					<li>Contact</li>
-				</ul>
-			</nav>
-		</header>
-
-		<div class="splash">
-			<div class="ellipse">
-				<div class="dot wow bounceIn"></div>
-			</div>
-
-			<div class="author">
-				<div class="author_img wow fadeInUp" data-wow-delay="0.7s"></div>
+	<header>
+		<div class="container">
+			<div class="navBarLine">
+				<div class="menuTop">
+					<a class="siteCompany" href="#"><img src="img/site_logo.png" alt="" class="site_logo">DATAPROGER</a>
+					<i id="toggleMenu" class="fas fa-bars"></i>
+				</div>
+				<nav>
+					<ul>
+						<a href="#">
+							<li>О нас</li>
+						</a>
+						<a href="#">
+							<li>Услуги</li>
+						</a>
+						<a href="#">
+							<li>Наши работы</li>
+						</a>
+						<a href="#">
+							<li>Контакты</li>
+						</a>
+					</ul>
+				</nav>
 			</div>
 		</div>
+	</header>
 
-		<div class="splash_text">
-			<div class="textLeft wow bounceInLeft">Good <br>design is</div>
-			<div class="textRight wow bounceInRight" data-wow-delay="0.3s">good <br>business</div>
+	<section id="section1">
+		<div class="container">
+			<h1>Красивый <span>дизайн</span> - <span>прибыльный</span> бизнес!</h1>
+			<h4><span>Создаем продающие сайты под ключ.</span></h4>
+			<i class="fas fa-arrow-down"></i>
 		</div>
 
-	</div>
+	</section>
+
+	<section id="section2">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, pariatur, unde. Quasi, officiis. Excepturi libero, illo nam, numquam quis sit fugit. Quibusdam facere fugit inventore, sed non pariatur, veniam laudantium.
+	</section>
 
 
 
-<script>
-	$(document).ready(function()
-	{
-		$(".burger ul i").bind("click", function()
-		{
-			$("nav").slideToggle("fast");
-		});
-		//enable();
-	});
-
-	function disable()
-	{
-		$('body').unbind("mousewheel");
-	}
-
-	function enable()
-	{
-		$('body').bind('mousewheel', function(e){
-	        if(e.originalEvent.wheelDelta / 120 > 0)
-	        {
-	            disable();
-	            console.log('scrolling up !');
-	            setTimeout(enable(), 2000);
-	        }
-	        else
-	        {
-	        	disable();
-	            console.log('scrolling down !');
-	            setTimeout(enable(), 2000);
-	        }
-	    });
-	}
-</script>
+	<script src="script/main.js"></script>
 </body>
 </html>
